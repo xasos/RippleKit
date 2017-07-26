@@ -1,0 +1,27 @@
+{
+  "name": "RippleKit",
+  "version": "0.1.0",
+  "summary": "A short description of RippleKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Niraj Pant/RippleKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Niraj Pant": "nirajpant7@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Niraj Pant/RippleKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RippleKit/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.4"
+    ]
+  }
+}
