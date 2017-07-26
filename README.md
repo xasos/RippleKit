@@ -1,5 +1,5 @@
 # RippleKit
-![Ripple](https://www.privateinternetaccess.com/blog/wp-content/uploads/2013/02/Logo_M.png)
+![Ripple](https://www.privateinternetaccess.com/blog/wp-content/uploads/2013/02/Logo_M.png){:height="50%" width="50%"}
 
 [![CocoaPods](https://img.shields.io/cocoapods/dt/RippleKit.svg?maxAge=2592000)]()
 [![Languages](https://img.shields.io/badge/languages-Swift-orange.svg?maxAge=2592000)](https://github.com/xasos/RippleKit)
