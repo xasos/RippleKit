@@ -1,5 +1,13 @@
 # RippleKit
-Swift wrapper to interact with the Ripple protocol
+![Ripple](https://www.privateinternetaccess.com/blog/wp-content/uploads/2013/02/Logo_M.png)
+
+[![CocoaPods](https://img.shields.io/cocoapods/dt/RippleKit.svg?maxAge=2592000)]()
+[![Languages](https://img.shields.io/badge/languages-Swift-orange.svg?maxAge=2592000)](https://github.com/xasos/RippleKit)
+[![CocoaPods](https://img.shields.io/cocoapods/v/RippleKit.svg?maxAge=2592000)](https://cocoapods.org/pods/RippleKit)
+[![carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](LICENSE)
+
+Swift iOS interface to the Ripple Consensus Ledger.
 
 ## Installation
 
