@@ -8,4 +8,4 @@
 
 import Foundation
 
-let rippleServers = ["http://s1.ripple.com:51234", "s-east.ripple.com:51234", "s-west.ripple.com:51234"]
+let rippleServers = ["https://s1.ripple.com:51234", "https://s-east.ripple.com:51234", "https://s-west.ripple.com:51234"]

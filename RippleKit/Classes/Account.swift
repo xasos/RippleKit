@@ -10,29 +10,27 @@ import Foundation
 import Alamofire
 
 public class Account {
-    let parameters: [String: Any] = [
-        "IdQuiz" : 102,
-        "IdUser" : "iosclient",
-        "User" : "iosclient",
-        "List": [
-            [
-                "IdQuestion" : 5,
-                "IdProposition": 2,
-                "Time" : 32
-            ],
-            [
-                "IdQuestion" : 4,
-                "IdProposition": 3,
-                "Time" : 9
+    
+    /// find server method
+    /// ping method
+    
+    public init() {
+        print("this is not a drill!!!")
+    }
+    
+    public func account_info(account: String) {
+        let parameters: [String: Any] = [
+            "method" : "account_info",
+            "params": [
+                [
+                    "account" : account
+                ]
             ]
         ]
-    ]
-    
-    func account_info() {
+        
         Alamofire.request(rippleServers[0], method:.post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { response in
                 print(response)
-                return response
         }
     }
 }
