@@ -2,11 +2,11 @@ Pod::Spec.new do |s|
   s.name             = 'RippleKit'
   s.version          = '0.1.0'
   s.summary          = 'Swift iOS interface to the Ripple Consensus Ledger.'
-  s.description      = 'Swift iOS interface to the Ripple Consensus Ledger.'
+  s.description      = 'Swift iOS interface to the Ripple Consensus Ledger. Supports iOS 9, iOS 10, and iOS 11.'
   s.homepage         = 'https://github.com/xasos/RippleKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Niraj Pant' => 'nirajpant7@gmail.com' }
-  s.source           = { :git => 'https://github.com/xasos/RippleKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/xasos/RippleKit.git', :tag => 'master' }
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'RippleKit/Classes/**/*'
