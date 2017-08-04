@@ -1,5 +1,5 @@
 //
-//  Utility.swift
+//  Ledger.swift
 //  Pods
 //
 //  Created by Niraj Pant on 7/26/17.
@@ -9,20 +9,23 @@
 import Foundation
 import Alamofire
 
-public class Utility {
-    
-    /// find server method
-    /// ping method
-    /// create account class? takes in acct id/hash
-    /// pass in as reference
-    
+public class Ledger {
+
     public init() {
         print("this is not a drill!!!")
     }
     
-    public func ping() {
+    public func ledger() {
         let parameters: [String: Any] = [
-            "method" : "ping"
+            "method" : "ledger",
+            "params": [
+                [
+                    "full": false,
+                    "expand": false,
+                    "transactions": true,
+                    "accounts": true
+                ]
+            ]
         ]
         
         Alamofire.request(rippleServers[0], method:.post, parameters: parameters, encoding: JSONEncoding.default)
@@ -31,9 +34,9 @@ public class Utility {
         }
     }
     
-    public func server_info() {
+    public func ledger_closed() {
         let parameters: [String: Any] = [
-            "method" : "server_info"
+            "method" : "ledger_closed",
         ]
         
         Alamofire.request(rippleServers[0], method:.post, parameters: parameters, encoding: JSONEncoding.default)
@@ -42,11 +45,11 @@ public class Utility {
         }
     }
     
-    public func server_state() {
+    public func ledger_current() {
         let parameters: [String: Any] = [
-            "method" : "server_state"
+            "method" : "ledger_current"
         ]
-        
+        // abstract this
         Alamofire.request(rippleServers[0], method:.post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { response in
                 print(response)

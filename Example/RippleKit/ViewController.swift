@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         print("yo")
         let account = Account()
-        account.account_info()
+        account.account_info(account: "r4LADqzmqQUMhgSyBLTtPMG4pAzrMDx7Yj")
     }
 
     override func didReceiveMemoryWarning() {

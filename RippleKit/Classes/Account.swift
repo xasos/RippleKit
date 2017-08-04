@@ -33,4 +33,62 @@ public class Account {
                 print(response)
         }
     }
+    
+    public func account_lines(account: String) {
+        let parameters: [String: Any] = [
+            "method" : "account_lines",
+            "params": [
+                [
+                    "account" : account,
+                    "ledger": "current"
+                ]
+            ]
+        ]
+        
+        Alamofire.request(rippleServers[0], method:.post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+        }
+    }
+    
+    public func account_offers(account: String) {
+        let parameters: [String: Any] = [
+            "method" : "account_offers",
+            "params": [
+                [
+                    "account" : account,
+                    "ledger": "current"
+                ]
+            ]
+        ]
+        
+        Alamofire.request(rippleServers[0], method:.post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+        }
+    }
+    
+    public func account_tx(account: String) {
+        let parameters: [String: Any] = [
+            "method" : "account_tx",
+            "params": [
+                [
+                    "account" : account,
+                    "ledger_index_min": -1,
+                    "ledger_index_max": -1,
+                    "binary": false,
+                    "count": false,
+                    "descending": false,
+                    "offset": 0,
+                    "limit": 10,
+                    "forward": false
+                ]
+            ]
+        ]
+        
+        Alamofire.request(rippleServers[0], method:.post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+        }
+    }
 }
